@@ -1,0 +1,46 @@
+PyTest Notes
+
+PyTest uses built-in assert statement to pass or fail tests
+- boolean 
+- typically used for comparisons
+
+EX.
+assert 2+2== 4  #true
+assert 2+2=="4" #false
+
+AssertionErrors raised, causes PyTest to report test failure 
+
+Run tests in Terminal > Your folder:
+    pytest
+    pytest -v (-v & -vv flags for more verbose output)
+
+
+************** OTHER Features *******************
+Auto-discovery -- finds tests based on name 
+
+Modular-fixtures -- used to manage test resources 
+
+Run multiple tests in parallel, etc
+
+
+***********************************************************************
+
+Unittest Notes
+
+***********************************************************************
+
+pytest				     vs				unittest 
+_________________________________________________________
+3rd party package 		  | Part of Python standard library
+_________________________________________________________
+Python's built in assert  | Class methods like .assertEqual() 
+statements			      | and .assertTrue()
+__________________________________________________________
+More features - fistures, | Less features than pytest, but  
+parallel testing          | similar. Cannot run parallel test
+__________________________________________________________
+pytest can run unittest   | cannot run pytest tests
+tests 		              |
+__________________________________________________________
+
+- PyTest all the way! 
